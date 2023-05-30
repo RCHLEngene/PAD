@@ -1,7 +1,92 @@
-<form id="loginForm">
-  <input type="text" id="username" placeholder="Nombre de usuario" required>
-  <input type="password" id="password" placeholder="Contrase&ntilde;a" required>
-  <button type="submit">Iniciar sesi&oacute;n</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
 
-<script src="login.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Login PAD</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="MULTIMEDIA\imagenes\logo_PAD.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/bootstrap-login-form.min.css" />
+</head>
+
+<body>
+  <!-- Start your project here-->
+
+  <style>
+	.logo{	width:40%; margin-top:-100px; margin-left:25rem;
+	}
+	
+    @media (min-width: 1025px) {
+      .h-custom-2 {
+        height: 100%;
+      }
+    }
+    @media (max-width: 1000px) {
+	.logo{margin-left:10rem; width:70%;margin-top:40px;}
+    }
+    @media (max-width: 800px) {
+	.logo{margin-left:8rem; width:70%;margin-top:40px;}
+    }
+  </style>
+  <section class="vh-100">
+    <div class="container-fluid">
+      <div class="row">
+	<!--Imagen enfermera login-->
+        <div class="col-sm-6 px-0 d-none d-sm-block" id="enfermera">
+          <img src="MULTIMEDIA\imagenes\sf-Enfermera-PAD.png" alt="Login image" class="w-90 vh-99" style="object-fit: cover; object-position: left;">
+        </div>
+
+	
+        <div class="col-sm-6 text-black">
+
+          <div class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n10">
+
+		<!--formulario login-->
+            <form style="width: 30rem;">
+
+              <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 2px; text-align:center;">ACESSO AL PORTAL <b style="color:#33DBC5;">PAD</b></h3>
+
+              <div class="form-outline mb-4">
+                <input type="email" id="form2Example18" class="form-control form-control-lg" />
+                <label class="form-label" for="form2Example18">Usuario</label>
+              </div>
+
+              <div class="form-outline mb-4">
+                <input type="password" id="form2Example28" class="form-control form-control-lg" />
+                <label class="form-label" for="form2Example28">Constrase&ntilde;a</label>
+              </div>
+
+              <div class="pt-1 mb-4">
+                <button class="btn btn-lg btn-block" type="button" style="background-color:#33DBC5;">Acceder</button>
+              </div>
+
+              <p class="small mb-5 pb-lg-2"><a class="text-muted" href="#!">Restablecer constrase&ntilde;a</a></p>
+
+            </form>
+
+          </div>
+	   <!--Logo-->
+          <div class="px-5 ms-xl-4">
+		<img src="MULTIMEDIA\imagenes\Logo.png" class="logo">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End your project here-->
+
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript"></script>
+</body>
+
+</html>
